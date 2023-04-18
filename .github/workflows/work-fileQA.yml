@@ -1,0 +1,25 @@
+
+
+name: PIPELINE QA
+
+on:
+
+  push:
+    branches: [ "QA" ]
+  pull_request:
+    branches: [ "QA" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+ 
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Primeiro Comando
+        run: echo Usando a branch de QA
+
+  
