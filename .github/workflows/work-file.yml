@@ -19,7 +19,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Primeira task
-        run: Executa o primeiro comando no Linux!
+        run: echo Executa o primeiro comando no Linux!
 
       # Runs a set of commands using the runners shell
       - name: Segunda Task
